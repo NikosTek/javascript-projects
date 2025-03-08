@@ -1,0 +1,48 @@
+/*Υλοποιήστε την εφαρμογή Notes με
+jQuery. Ανεβάστε στο GitHub
+*/
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>jQuery Notes App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        
+                    }
+                }
+            }
+        }
+    </script>
+  </head>
+  <body>
+    <div class="w-[300px] h-[500px] my-5 mx-auto border-2 border-black rounded-[5px]">
+      <header>
+          <div>
+              <span id="dateTxt" class="flex justify-center items-center text-center h-[50px] border-b border-black text-[rgb(180,10,10)] text-[1rem]">14 Ιουνίου 2024<br>19:16:00</span>
+          </div>
+      </header>
+      <main>
+          <div id="notesWrapper" class="h-[400px] border-b border-black overflow-auto">
+              
+          </div>
+      </main>
+      <footer>
+          <div class="flex justify-between items-center px-[5px] h-[45px]">
+              <input type="text" id="inputNote" class="w-[200px] h-[40px] pl-[5px]" placeholder="Insert note">
+              <button type="button" id="addNoteBtn" class="w-[40px] h-[40px] border rounded-full">+</button>
+          </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js" integrity="sha512-3dZ9wIrMMij8rOH7X3kLfXAzwtcHpuYpEgQg1OA4QAob1e81H8ntUQmQm3pBudqIoySO5j0tHN4ENzA6+n2r4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./main.js"></script>
+
+  </body>
+</html>
